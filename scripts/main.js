@@ -2,6 +2,32 @@ window.onload = function() {
   //using timeline max from greesock library for animations; allowing animation stacking to be played sequentially
   let tl = new TimelineMax({ repeat: 20, repeatDelay: 1 });
 
+  tl.from("#crystal_2", 1, { y: -100, opacity: 0, ease: Elastic.easeOut }).to(
+    "#crystal_2",
+    1,
+    { y: 200, opacity: 0, ease: Elastic.easeIn },
+    "+=1"
+  );
+
+  tl.to(
+    ".cls-2",
+    0.5,
+    { css: { stroke: "#f1c40f" }, ease: Linear.easeOut },
+    0.25
+  );
+  tl.to(
+    ".cls-2",
+    0.5,
+    { css: { stroke: "#2ecc71" }, ease: Linear.easeOut },
+    0.75
+  );
+  tl.to(
+    ".cls-2",
+    0.5,
+    { css: { stroke: "#3498db" }, ease: Linear.easeOut },
+    1.25
+  );
+
   tl.to("#middle-section", 1, {
     x: 100,
     y: 100,
