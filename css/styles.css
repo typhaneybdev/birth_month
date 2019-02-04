@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  width: 300px;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
