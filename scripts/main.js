@@ -2,6 +2,13 @@ window.onload = function() {
   //using timeline max from greesock library for animations; allowing animation stacking to be played sequentially
   let tl = new TimelineMax({ repeat: 20, repeatDelay: 1 });
 
+  tl.to("#middle-section", 1, {
+    x: 100,
+    y: 100,
+    scale: 1.2,
+    rotation: 180
+  });
+
   //animate crystal stroke color
   tl.to(
     ".cls-1",
