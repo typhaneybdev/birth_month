@@ -1,15 +1,8 @@
 window.onload = function() {
   //using timeline max from greesock library for animations; allowing animation stacking to be played sequentially
-  let tl = new TimelineMax({ repeat: 6, repeatDelay: 1 });
+  let tl = new TimelineMax({ repeat: 20, repeatDelay: 1 });
 
-  //timeline var(html element, duration, {object type of transition, property : new value} delay of animation)
-  //tl.to("#title-container", 0.2, {
-  //  ease: Power1.easerIn,
-  //  opacity: 1,
-  //scale: 1,
-  // top: 166
-  // });
-
+  //animate crystal stroke color
   tl.to(
     ".cls-1",
     0.5,
@@ -27,5 +20,41 @@ window.onload = function() {
     0.5,
     { css: { stroke: "#3498db" }, ease: Linear.easeOut },
     1.25
+  );
+  tl.to(
+    ".cls-1",
+    0.5,
+    { css: { stroke: "#1fcc65" }, ease: Linear.easeOut },
+    1.5
+  );
+
+  tl.to(
+    ".cls-1",
+    0.5,
+    { css: { stroke: "#f9b132" }, ease: Linear.easeOut },
+    1.75
+  );
+
+  tl.to(".cls-1", 0.5, { css: { stroke: "#f4530c" }, ease: Linear.easeOut }, 2);
+
+  tl.to(
+    ".cls-1",
+    0.5,
+    { css: { stroke: "#f4530c" }, ease: Linear.easeOut },
+    2.25
+  );
+
+  tl.to(
+    ".cls-1",
+    0.5,
+    { css: { stroke: "#f4220c" }, ease: Linear.easeOut },
+    2.5
+  );
+
+  tl.to(
+    ".cls-1",
+    0.5,
+    { css: { stroke: "#7b1fcc" }, ease: Linear.easeOut },
+    2.75
   );
 };
