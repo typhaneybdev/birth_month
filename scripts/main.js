@@ -43,7 +43,8 @@ function monthInput() {
     default:
       "this is a test";
   }
-  document.getElementById("test").innerHTML = text;
 
+  document.getElementById("submit").click(monthInput());
+  document.getElementById("test").innerHTML = text;
   console.log(month);
 }
