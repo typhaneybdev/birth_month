@@ -1,7 +1,7 @@
 //getting form input value
 function monthInput() {
   let month = document.getElementById("month").value;
-  event.preventDefault();
+
   switch (month) {
     case "January":
       text = "garnet is your birthstone";
@@ -42,9 +42,9 @@ function monthInput() {
 
     default:
       "this is a test";
+      break;
   }
 
-  document.getElementById("submit").click(monthInput());
   document.getElementById("test").innerHTML = text;
   console.log(month);
 }

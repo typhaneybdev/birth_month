@@ -9,7 +9,7 @@
     <script type="text/JavaScript" src="scripts/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script type="text/JavaScript"></script>
-    <title>GSAP Crystals</title>
+    <title>Birth Month App</title>
   </head>
   <body>
     <div class="container">
@@ -17,14 +17,9 @@
         <div id="input-container">
           <form id="month-input">
             ENTER YOUR BIRTH MONTH <br />
-            <input
-              id="month"
-              type="text"
-              name="month"
-              onchange="monthInput()"
-            />
+            <input id="month" type="text" name="month" />
           </form>
-          <input id="submit" type="submit" />
+          <input id="submit" type="submit" onclick="monthInput()" />
           <p id="test"></p>
         </div>
       </div>
