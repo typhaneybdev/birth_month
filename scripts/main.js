@@ -1,42 +1,42 @@
 //getting form input value
 function monthInput() {
-  let month = document.getElementById("month").value;
+  let month = document.getElementById("month").value.toLowerCase();
 
   switch (month) {
-    case "January":
+    case "january":
       text = "garnet is your birthstone";
       break;
-    case "February":
+    case "february":
       text = "Amethyst is your birthstone";
       break;
-    case "March":
+    case "march":
       text = "Aquamarine is your birthstone";
       break;
-    case "April":
+    case "april":
       text = "Diamond is your birthstone";
       break;
-    case "May":
+    case "may":
       text = "Emerald is your birthstone";
       break;
-    case "June":
+    case "june":
       text = "Alexandrite & Pearl are your birthstones";
       break;
-    case "July":
+    case "july":
       text = "Ruby is your birthstone";
       break;
-    case "August":
+    case "august":
       text = "Peridot is your birthstone";
       break;
-    case "September":
+    case "september":
       text = "Sapphire is your birthstone";
       break;
-    case "October":
+    case "october":
       text = "Opal & Tourmaline are your birthstones";
       break;
-    case "November":
+    case "november":
       text = "Citrine & Topaz are your birthstones";
       break;
-    case "December":
+    case "december":
       text = "Tanzanite, Turquoise and Blue Zircon are your birthstones";
       break;
 
